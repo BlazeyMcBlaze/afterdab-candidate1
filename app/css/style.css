@@ -11,6 +11,10 @@
 @theme {
   --font-inter: var(--font-inter), sans-serif;
   --font-nacelle: var(--font-nacelle), sans-serif;
+  --color-indigo-100: #e0fbec; 
+  --color-indigo-200: #b3f5cf; /* Subtle text highlights */
+  --color-indigo-500: #39ff14; /* Main Accent (Buttons, Icons) */
+  --color-indigo-600: #2ebd11; /* Hover State */
 
   --text-xs: 0.8125rem;
   --text-xs--line-height: 1.5384;
