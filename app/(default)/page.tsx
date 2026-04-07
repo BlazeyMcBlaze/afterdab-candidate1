@@ -1,23 +1,19 @@
 export const metadata = {
-  title: "Home - Open PRO",
-  description: "Page description",
+  title: "Afterdab Hosting | High Performance Game Servers",
+  description: "Ryzen 9700X Dedicated Servers. Teir3 Data Center. Zero Overselling.",
 };
 
-import PageIllustration from "@/components/page-illustration";
 import Hero from "@/components/hero-home";
-import Workflows from "@/components/workflows";
 import Features from "@/components/features";
-import Testimonials from "@/components/testimonials";
+import Workflows from "@/components/workflows";
 import Cta from "@/components/cta";
 
 export default function Home() {
   return (
     <>
-      <PageIllustration />
       <Hero />
-      <Workflows />
       <Features />
-      <Testimonials />
+      <Workflows />
       <Cta />
     </>
   );
