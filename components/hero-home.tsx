@@ -13,13 +13,16 @@ export default function HeroHome() {
               Performance-Locked Game & Dev Hosting
             </h1>
             <div className="mx-auto max-w-3xl">
-              <p
-                className="mb-8 text-xl text-indigo-200/65"
-                data-aos="fade-up"
-                data-aos-delay={200}
-              >
-                Deploy on dedicated Ryzen 9700X cores with DDR5 memory. From high-tick DayZ worlds to automated Python backends, we provide the raw clock speeds your infrastructure demands.
-              </p>
+<p
+  className="mb-8 text-xl text-indigo-200/65"
+  data-aos="fade-up"
+  data-aos-delay={200}
+>
+  Deploy on dedicated Ryzen 9700X cores with DDR5 memory. From high-tick DayZ worlds to automated Python backends, we provide the raw clock speeds your infrastructure demands.
+  <br />
+  <br />
+  All hosted on servers located at the OVH Beauharnois Data Center in Montreal, QC.
+</p>
               <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
                 <div data-aos="fade-up" data-aos-delay={400}>
                   <a
