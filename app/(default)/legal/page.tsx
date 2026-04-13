@@ -1,66 +1,81 @@
 import Image from "next/image";
 import BlurredShape from "@/public/images/blurred-shape.svg";
 
-export default function LegalPage() {
+export const metadata = {
+  title: "Legal | Afterdab Game and Server Hosting",
+  description: "Terms of Service, Privacy Policy, and Refund Policy.",
+};
+
+export default function Legal() {
   return (
-    <section className="relative overflow-hidden bg-gray-900 text-gray-300 py-20">
-      {/* Background Aesthetic */}
-      <div className="pointer-events-none absolute top-0 left-1/2 -z-10 -translate-x-1/2 opacity-50" aria-hidden="true">
-        <Image className="max-w-none" src={BlurredShape} width={760} height={668} alt="Blurred shape" />
+    <section className="relative overflow-hidden">
+      {/* Background shape matching Hero/Cta */}
+      <div
+        className="pointer-events-none absolute bottom-0 left-1/2 -z-10 -mb-24 ml-20 -translate-x-1/2"
+        aria-hidden="true"
+      >
+        <Image
+          className="max-w-none"
+          src={BlurredShape}
+          width={760}
+          height={668}
+          alt="Blurred shape"
+        />
       </div>
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6">
-        <div className="text-center mb-16">
-          <h1 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-indigo-200),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text font-nacelle text-4xl font-semibold text-transparent md:text-5xl">
-            Legal Information
-          </h1>
-          <p className="mt-4 text-gray-400">Afterdab Game and Server Hosting | New Brunswick, Canada</p>
-        </div>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="pt-32 pb-12 md:pt-40 md:pb-20">
+          {/* Page header */}
+          <div className="max-w-3xl pb-12 md:pb-20">
+            <h1 
+              className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-indigo-200),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-4xl font-semibold text-transparent md:text-5xl"
+              data-aos="fade-up"
+            >
+              Legal & Policies
+            </h1>
+            <p className="text-lg text-gray-400" data-aos="fade-up" data-aos-delay="200">
+              Afterdab Game and Server Hosting — New Brunswick, Canada.
+            </p>
+          </div>
 
-        <div className="space-y-16">
-          {/* Terms of Service Section */}
-          <section id="terms" className="scroll-mt-20">
-            <h2 className="text-2xl font-semibold text-gray-100 border-b border-gray-800 pb-2 mb-6">Terms of Service</h2>
-            <div className="prose prose-invert max-w-none text-gray-400 space-y-4">
-              <p>This agreement is between you (the "Client") and <strong>Afterdab Game and Server Hosting</strong> (the "Company"). By purchasing or using any service, you agree to these terms.</p>
-              <ul className="list-disc pl-5 space-y-2">
-                <li><strong>Resource Abuse:</strong> No crypto-mining, DDoS stressing, or intentional CPU pegging for non-gaming tasks.</li>
-                <li><strong>Illegal Content:</strong> No hosting of copyrighted material or content violating Canadian law.</li>
-                <li><strong>Network Integrity:</strong> No utilizing Company services for network attacks or malicious software distribution.</li>
-                <li><strong>Payments:</strong> All services are pre-paid. Chargebacks result in immediate account termination.</li>
-              </ul>
+          {/* Content grid */}
+          <div className="grid gap-12 md:grid-cols-3" data-aos="fade-up" data-aos-delay="400">
+            
+            {/* Terms of Service */}
+            <div>
+              <h2 className="font-nacelle text-xl font-semibold text-gray-200 mb-4">Terms of Service</h2>
+              <div className="text-sm text-gray-400 space-y-4">
+                <p>By using <strong>Afterdab Game and Server Hosting</strong>, you agree to our Acceptable Use Policy. Resource abuse (crypto-mining/DDoS) results in immediate termination.</p>
+                <p>Users must comply with all game-specific EULAs (Minecraft, DayZ, etc.).</p>
+              </div>
             </div>
-          </section>
 
-          {/* Refund Policy Section */}
-          <section id="refunds" className="scroll-mt-20">
-            <h2 className="text-2xl font-semibold text-gray-100 border-b border-gray-800 pb-2 mb-6">Refund Policy</h2>
-            <div className="prose prose-invert max-w-none text-gray-400 space-y-4">
-              <p>We offer a <strong>48-Hour Satisfaction Guarantee</strong>. If the hardware does not meet promised technical specs, a full refund is available within the first 48 hours.</p>
-              <ul className="list-disc pl-5 space-y-2">
-                <li>No refunds after the 48-hour window.</li>
-                <li>No refunds for "buyer's remorse" or players leaving.</li>
-                <li>Dedicated IPs and account credits are non-refundable.</li>
-              </ul>
+            {/* Refund Policy */}
+            <div>
+              <h2 className="font-nacelle text-xl font-semibold text-gray-200 mb-4">Refund Policy</h2>
+              <div className="text-sm text-gray-400 space-y-4">
+                <p>We offer a <strong>48-hour satisfaction guarantee</strong>. If the hardware fails to meet our technical standards, a full refund is available.</p>
+                <p>No refunds are issued for "buyer's remorse" or service cancellations after the 48-hour window.</p>
+              </div>
             </div>
-          </section>
 
-          {/* Privacy Policy Section */}
-          <section id="privacy" className="scroll-mt-20">
-            <h2 className="text-2xl font-semibold text-gray-100 border-b border-gray-800 pb-2 mb-6">Privacy Policy</h2>
-            <div className="prose prose-invert max-w-none text-gray-400 space-y-4">
-              <p>We respect your privacy. We collect only your name and email for account management and billing.</p>
-              <p><strong>Payments:</strong> We do not store credit card data. All payments are processed securely via Stripe.</p>
-              <p><strong>Data:</strong> We do not sell your personal data to third parties. We comply with Canadian data privacy standards.</p>
+            {/* Privacy Policy */}
+            <div>
+              <h2 className="font-nacelle text-xl font-semibold text-gray-200 mb-4">Privacy Policy</h2>
+              <div className="text-sm text-gray-400 space-y-4">
+                <p>We collect only essential account data (Name/Email). <strong>We do not store credit card information</strong>; all payments are handled by Stripe.</p>
+                <p>Your data is never sold. We operate under New Brunswick, Canada jurisdiction.</p>
+              </div>
             </div>
-          </section>
-        </div>
 
-        {/* Return Button */}
-        <div className="mt-20 text-center">
-          <a className="btn bg-gray-800 text-gray-300 hover:bg-gray-700 px-6 py-2 rounded-lg transition" href="https://billing.afterdab.com">
-            Return to Billing
-          </a>
+          </div>
+
+          {/* Bottom CTA to return */}
+          <div className="mt-16 border-t border-gray-800 pt-8">
+             <a className="text-indigo-500 hover:text-indigo-400 transition-colors font-medium inline-flex items-center" href="https://billing.afterdab.com">
+               Back to Billing <span className="ml-1">-></span>
+             </a>
+          </div>
         </div>
       </div>
     </section>
