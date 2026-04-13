@@ -73,7 +73,7 @@ export default function Legal() {
           {/* Bottom CTA to return */}
           <div className="mt-16 border-t border-gray-800 pt-8">
              <a className="text-indigo-500 hover:text-indigo-400 transition-colors font-medium inline-flex items-center" href="https://billing.afterdab.com">
-               Back to Billing <span className="ml-1">-></span>
+               Back to Billing <span className="ml-1">{'->'}</span>
              </a>
           </div>
         </div>
