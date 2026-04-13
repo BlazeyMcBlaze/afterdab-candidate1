@@ -1,8 +1,6 @@
 import "./css/style.css";
-
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
-
 import Header from "@/components/ui/header";
 
 const inter = Inter({
@@ -13,35 +11,18 @@ const inter = Inter({
 
 const nacelle = localFont({
   src: [
-    {
-      path: "../public/fonts/nacelle-regular.woff2",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../public/fonts/nacelle-italic.woff2",
-      weight: "400",
-      style: "italic",
-    },
-    {
-      path: "../public/fonts/nacelle-semibold.woff2",
-      weight: "600",
-      style: "normal",
-    },
-    {
-      path: "../public/fonts/nacelle-semibolditalic.woff2",
-      weight: "600",
-      style: "italic",
-    },
+    { path: "../public/fonts/nacelle-regular.woff2", weight: "400", style: "normal" },
+    { path: "../public/fonts/nacelle-italic.woff2", weight: "400", style: "italic" },
+    { path: "../public/fonts/nacelle-semibold.woff2", weight: "600", style: "normal" },
+    { path: "../public/fonts/nacelle-semibolditalic.woff2", weight: "600", style: "italic" },
   ],
   variable: "--font-nacelle",
   display: "swap",
 });
 
-// Fixed the metadata so Discord and Google actually see your brand
 export const metadata = {
   title: "Afterdab Hosting | High-Performance Server Hosting",
-  description: "Dedicated Ryzen 9700X game server hosting engineered for uptime out of Montreal (BHS). Raw performance. No bullshit.",
+  description: "Dedicated Ryzen 9700X game server hosting engineered for high-tick stability. Located in Dieppe, New Brunswick.",
 };
 
 export default function RootLayout({
@@ -51,10 +32,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        /* Changed bg-gray-950 to bg-black, and text-gray-200 to text-gray-300 for better contrast */
-        className={`${inter.variable} ${nacelle.variable} bg-black font-inter text-base text-gray-300 antialiased`}
-      >
+      <body className={`${inter.variable} ${nacelle.variable} bg-black font-inter text-base text-gray-300 antialiased`}>
         <div className="flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:overflow-clip">
           <Header />
           {children}
