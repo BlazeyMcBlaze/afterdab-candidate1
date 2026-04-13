@@ -18,20 +18,17 @@ export default function Footer() {
 
           {/* Lobotomized Flat Links */}
           <div className="flex flex-wrap justify-center gap-6 text-sm font-medium">
-            <a className="text-gray-300 hover:text-indigo-500 transition-colors" href="https://billing.yourdomain.com">
+            <a className="text-gray-300 hover:text-indigo-500 transition-colors" href="https://billing.afterdab.com">
               Client Area
             </a>
-            <a className="text-gray-300 hover:text-indigo-500 transition-colors" href="https://panel.yourdomain.com">
+            <a className="text-gray-300 hover:text-indigo-500 transition-colors" href="https://panel.afterdab.com">
               Game Panel
             </a>
             <a className="text-gray-300 hover:text-indigo-500 transition-colors" href="https://discord.gg/yourlink" target="_blank" rel="noopener noreferrer">
               Discord
             </a>
-            <Link className="text-gray-500 hover:text-indigo-500 transition-colors" href="/tos">
-              Terms
-            </Link>
-            <Link className="text-gray-500 hover:text-indigo-500 transition-colors" href="/privacy">
-              Privacy
+            <Link className="text-gray-500 hover:text-indigo-500 transition-colors" href="/legal">
+              Legal
             </Link>
           </div>
 
