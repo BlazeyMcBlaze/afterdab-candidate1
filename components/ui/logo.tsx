@@ -1,19 +1,21 @@
 import Link from "next/link";
+import Image from "next/image";
+import LogoImg from "@/public/logo.png";
 
 export default function Logo() {
   return (
-    <Link href="/" className="inline-flex flex-col items-center justify-center leading-none" aria-label="Afterdab Hosting">
-      
-      {/* Changed 'font-nacelle' to 'font-sans' and bumped the size to text-2xl for better visibility */}
-      <span className="font-mono text-2xl font-bold tracking-wide text-gray-200">
-        AfterDab
+    <Link href="/" className="inline-flex shrink-0 items-center gap-2" aria-label="Afterdab">
+      <Image 
+        src={LogoImg} 
+        alt="Afterdab Logo" 
+        width={32} // Adjust this based on your logo's shape
+        height={32} 
+        priority 
+        className="rounded-sm"
+      />
+      <span className="font-nacelle text-xl font-bold tracking-tight text-white hover:text-[#39ff14] transition-colors">
+        Afterdab
       </span>
-      
-      {/* Added 'mt-1' to give it a tiny bit of breathing room */}
-      <span className="mt-1 text-[0.7rem] font-medium uppercase tracking-[0.2em] text-indigo-500">
-        Hosting
-      </span>
-      
     </Link>
   );
 }
