@@ -22,7 +22,16 @@ const nacelle = localFont({
 
 export const metadata = {
   title: "Afterdab Hosting | High-Performance Server Hosting",
-  description: "Dedicated Ryzen 9700X game server hosting engineered for high-tick stability. Located in Dieppe, New Brunswick.",
+  description: "Dedicated Ryzen 9700X game server hosting engineered for high-tick stability. Located in Montreal, QC.",
+  icons: {
+    icon: [
+      { url: '/favicon.ico' }, // Root level
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png' },
+    ],
+  },
 };
 
 export default function RootLayout({
