@@ -16,7 +16,7 @@ export default function HeroHome() {
                 data-aos="fade-up"
                 data-aos-delay={200}
               >
-                Stop playing on oversold hardware. Deploy your community on dedicated Ryzen 9700X cores with DDR5 memory. Low-latency nodes located in Dieppe, New Brunswick.
+                Stop playing on oversold hardware. Deploy your community on dedicated Ryzen 9700X cores with DDR5 memory. Low-latency nodes located at OVH's Beauharnois Datacenter in Montreal, QC
               </p>
               <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
                 <div data-aos="fade-up" data-aos-delay={400}>
