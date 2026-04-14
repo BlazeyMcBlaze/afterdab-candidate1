@@ -3,7 +3,7 @@ import BlurredShape from "@/public/images/blurred-shape.svg";
 
 export const metadata = {
   title: "Legal | Afterdab Game and Server Hosting",
-  description: "Terms of Service, Privacy Policy, and Refund Policy.",
+  description: "Terms of Service, Privacy Policy, Refund Policy, and Promotional Terms.",
 };
 
 export default function Legal() {
@@ -38,8 +38,8 @@ export default function Legal() {
             </p>
           </div>
 
-          {/* Content grid */}
-          <div className="grid gap-12 md:grid-cols-3" data-aos="fade-up" data-aos-delay="400">
+          {/* Content grid - Adjusted to 2x2 for the 4th section */}
+          <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-2" data-aos="fade-up" data-aos-delay="400">
             
             {/* Terms of Service */}
             <div>
@@ -68,12 +68,22 @@ export default function Legal() {
               </div>
             </div>
 
+            {/* Promotional Offers & Coupons */}
+            <div>
+              <h2 className="font-nacelle text-xl font-semibold text-gray-200 mb-4">Promotions & Coupons</h2>
+              <div className="text-sm text-gray-400 space-y-4">
+                <p>Discount codes (e.g., <strong>FIRSTDAB</strong>) are valid for new deployments only. Lifetime discounts apply to the recurring cost of the specific service at purchase; cancellation voids the discount.</p>
+                <p>Introductory "step-down" offers (e.g., 50% off month one) are subject to manual verification and will be adjusted for subsequent billing cycles as advertised.</p>
+                <p>Only one promotional code may be applied per service. Coupons cannot be stacked.</p>
+              </div>
+            </div>
+
           </div>
 
           {/* Bottom CTA to return */}
           <div className="mt-16 border-t border-gray-800 pt-8">
              <a className="text-indigo-500 hover:text-indigo-400 transition-colors font-medium inline-flex items-center" href="https://billing.afterdab.com">
-               Back to Billing <span className="ml-1">{'->'}</span>
+                Back to Billing <span className="ml-1">{'->'}</span>
              </a>
           </div>
         </div>
