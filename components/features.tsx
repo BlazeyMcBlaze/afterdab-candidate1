@@ -25,7 +25,7 @@ export default function Features() {
             <article className="flex flex-col rounded-2xl border border-indigo-500/20 bg-gray-900/50 p-5 transition-all hover:border-indigo-500/50">
               <h3 className="mb-2 font-nacelle text-lg font-semibold text-gray-200">Premium Games</h3>
               <p className="mb-6 flex-grow text-xs text-indigo-200/65">DayZ, Arma 3, and Rust. Optimized for high entity counts and simulation stability.</p>
-              <a href="https://billing.afterdab.com/products/games" className="btn-sm w-full bg-indigo-600 py-2 text-center text-white hover:bg-indigo-500 rounded">
+              <a href="https://billing.afterdab.com/products/game-servers" className="btn-sm w-full bg-indigo-600 py-2 text-center text-white hover:bg-indigo-500 rounded">
                 View Plans
               </a>
             </article>
@@ -43,7 +43,7 @@ export default function Features() {
             <article className="flex flex-col rounded-2xl border border-indigo-500/20 bg-gray-900/50 p-5 transition-all hover:border-indigo-500/50">
               <h3 className="mb-2 font-nacelle text-lg font-semibold text-gray-200">Casual & Co-op</h3>
               <p className="mb-6 flex-grow text-xs text-indigo-200/65">Valheim, Terraria, and more. Reliable performance for you and your friends.</p>
-              <a href="https://billing.afterdab.com/products/games" className="btn-sm w-full bg-indigo-600 py-2 text-center text-white hover:bg-indigo-500 rounded">
+              <a href="https://billing.afterdab.com/products/game-servers" className="btn-sm w-full bg-indigo-600 py-2 text-center text-white hover:bg-indigo-500 rounded">
                 View Plans
               </a>
             </article>
