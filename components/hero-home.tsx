@@ -27,7 +27,7 @@ export default function HeroHome() {
                 <div data-aos="fade-up" data-aos-delay={400}>
                   <a
                     className="btn group mb-4 w-full bg-indigo-600 text-white shadow-sm hover:bg-indigo-500 sm:mb-0 sm:w-auto"
-                    href="https://billing.afterdab.com/products/games"
+                    href="https://billing.afterdab.com/products/game-servers"
                   >
                     <span className="relative inline-flex items-center">
                       Deploy Now
