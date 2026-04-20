@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/games",
+      "destination": "https://billing.afterdab.com/game-servers",
+      "permanent": true
+    }
+  ]
+}
