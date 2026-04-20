@@ -2,7 +2,7 @@
   "redirects": [
     {
       "source": "/games",
-      "destination": "https://billing.afterdab.com/game-servers",
+      "destination": "https://billing.afterdab.com/products/game-servers",
       "permanent": true
     }
   ]
