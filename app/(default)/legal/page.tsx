@@ -9,7 +9,7 @@ export const metadata = {
 export default function Legal() {
   return (
     <section className="relative overflow-hidden">
-      {/* Background shape matching Hero/Cta */}
+      {/* Background shape */}
       <div
         className="pointer-events-none absolute bottom-0 left-1/2 -z-10 -mb-24 ml-20 -translate-x-1/2"
         aria-hidden="true"
@@ -27,10 +27,7 @@ export default function Legal() {
         <div className="pt-32 pb-12 md:pt-40 md:pb-20">
           {/* Page header */}
           <div className="max-w-3xl pb-12 md:pb-20">
-            <h1 
-              className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-indigo-200),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-4xl font-semibold text-transparent md:text-5xl"
-              data-aos="fade-up"
-            >
+            <h1 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-indigo-200),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-4xl font-semibold text-transparent md:text-5xl" data-aos="fade-up">
               Legal & Policies
             </h1>
             <p className="text-lg text-gray-400" data-aos="fade-up" data-aos-delay="200">
@@ -38,7 +35,7 @@ export default function Legal() {
             </p>
           </div>
 
-          {/* Content grid - Adjusted to 2x2 for the 4th section */}
+          {/* Content grid - Corrected structural nesting */}
           <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-2" data-aos="fade-up" data-aos-delay="400">
             
             {/* Terms of Service */}
@@ -46,6 +43,7 @@ export default function Legal() {
               <h2 className="font-nacelle text-xl font-semibold text-gray-200 mb-4">Terms of Service</h2>
               <div className="text-sm text-gray-400 space-y-4">
                 <p>By using <strong>Afterdab Game and Server Hosting</strong>, you agree to our Acceptable Use Policy. Resource abuse (crypto-mining/DDoS) results in immediate termination.</p>
+                <p><strong>Free & Entry-Level Plans:</strong> Our "Free Tier" (accessible via Discord request) and the $12/year Entry-Level plan are subject to strict resource limits. Afterdab reserves the right to reclaim these services if they remain inactive or violate usage policies.</p>
                 <p>Users must comply with all game-specific EULAs (Minecraft, DayZ, etc.).</p>
               </div>
             </div>
@@ -73,17 +71,17 @@ export default function Legal() {
               <h2 className="font-nacelle text-xl font-semibold text-gray-200 mb-4">Promotions & Coupons</h2>
               <div className="text-sm text-gray-400 space-y-4">
                 <p>Discount codes (e.g., <strong>FIRSTDAB</strong>) are valid for new deployments only. Lifetime discounts apply to the recurring cost of the specific service at purchase; cancellation voids the discount.</p>
-                <p>Introductory "step-down" offers (e.g., 50% off month one) are subject to manual verification and will be adjusted for subsequent billing cycles as advertised.</p>
-                <p>Only one promotional code may be applied per service. Coupons cannot be stacked.</p>
+                <p><strong>Exclusions:</strong> The $12/year plan and the Free Tier plan are <strong>excluded from all promotional coupons</strong> unless explicitly stated in a specific campaign.</p>
+                <p>Introductory "step-down" offers are subject to manual verification. Only one promotional code may be applied per service; coupons cannot be stacked.</p>
               </div>
             </div>
 
-          </div>
+          </div> {/* Grid close */}
 
           {/* Bottom CTA to return */}
           <div className="mt-16 border-t border-gray-800 pt-8">
              <a className="text-indigo-500 hover:text-indigo-400 transition-colors font-medium inline-flex items-center" href="https://billing.afterdab.com">
-                Back to Billing <span className="ml-1">{'->'}</span>
+               Back to Billing <span className="ml-1">{'->'}</span>
              </a>
           </div>
         </div>
