@@ -4,6 +4,11 @@
       "source": "/games",
       "destination": "https://billing.afterdab.com/products/game-servers",
       "permanent": true
+    },
+    {
+      "source": "/discord",
+      "destination": "https://discord.gg/YyBrNQaMEa",
+      "permanent": true
     }
   ]
 }
