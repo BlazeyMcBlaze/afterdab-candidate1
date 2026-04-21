@@ -24,7 +24,7 @@ export default function Footer() {
             <a className="text-gray-300 hover:text-indigo-500 transition-colors" href="https://panel.afterdab.com">
               Game Panel
             </a>
-            <a className="text-gray-300 hover:text-indigo-500 transition-colors" href="https://discord.gg/YyBrNQaMEa" target="_blank" rel="noopener noreferrer">
+            <a className="text-gray-300 hover:text-indigo-500 transition-colors" href="https://afterdab.com/discord/" target="_blank" rel="noopener noreferrer">
               Discord
             </a>
             <Link className="text-gray-500 hover:text-indigo-500 transition-colors" href="/legal">

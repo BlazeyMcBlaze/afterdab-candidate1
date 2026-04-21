@@ -40,7 +40,7 @@ export default function HeroHome() {
                 <div data-aos="fade-up" data-aos-delay={600}>
                   <a
                     className="btn w-full bg-gray-800 text-gray-200 hover:bg-gray-700 sm:ml-4 sm:w-auto shadow-sm"
-                    href="https://discord.gg/YyBrNQaMEa"
+                    href="https://afterdab.com/discord/"
                   >
                     Join Discord
                   </a>
