@@ -14,7 +14,7 @@ export default function Header() {
           </div>
 
           {/* Desktop sign in links */}
-          <ul className="flex flex-1 items-center justify-end gap-3">
+          <ul className="flex flex-none items-center justify-end gap-3">
             <li>
               <a
                 href="https://panel.afterdab.com"
