@@ -25,14 +25,15 @@ export default function Header() {
                 Game Panel
               </a>
             </li>
-            <li>
-              <a
-                href="https://billing.afterdab.com"
-                className="btn-sm bg-linear-to-t from-indigo-600 to-indigo-500 py-[5px] text-xs text-white shadow-md hover:from-indigo-500 hover:to-indigo-400"
-              >
-                Client Area
-              </a>
-            </li>
+<li>
+  <a
+    href="https://billing.afterdab.com"
+    // Swapping to a standard solid color to test rendering stability
+    className="btn-sm bg-indigo-600 py-[5px] px-3 text-xs text-white shadow-md hover:bg-indigo-500 transition-colors"
+  >
+    Client Area
+  </a>
+</li>
           </ul>
         </div>
       </div>
