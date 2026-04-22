@@ -14,27 +14,28 @@ export default function Header() {
           </div>
 
           {/* Desktop sign in links */}
-          <ul className="flex flex-none items-center justify-end gap-3">
-            <li>
-              <a
-                href="https://panel.afterdab.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-sm relative bg-gray-800 py-[5px] text-xs text-gray-300 hover:bg-gray-700 transition-colors"
-              >
-                Game Panel
-              </a>
-            </li>
-<li>
-  <a
-    href="https://billing.afterdab.com"
-    // Swapping to a standard solid color to test rendering stability
-    className="btn-sm bg-indigo-600 py-[5px] px-3 text-xs text-white shadow-md hover:bg-indigo-500 transition-colors"
-  >
-    Client Area
-  </a>
-</li>
-          </ul>
+        <ul className="flex flex-none items-center justify-end gap-3">
+  <li>
+    <a
+      href="https://panel.afterdab.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      // Added inline style to guarantee visibility
+      style={{ display: 'inline-block', padding: '5px 15px', backgroundColor: '#1f2937', color: '#d1d5db', borderRadius: '0.5rem', fontSize: '0.75rem' }}
+    >
+      Game Panel
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://billing.afterdab.com"
+      // Added inline style to guarantee visibility
+      style={{ display: 'inline-block', padding: '5px 15px', backgroundColor: '#4f46e5', color: '#ffffff', borderRadius: '0.5rem', fontSize: '0.75rem' }}
+    >
+      Client Area
+    </a>
+  </li>
+</ul>
         </div>
       </div>
     </header>
